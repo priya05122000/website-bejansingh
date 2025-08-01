@@ -20,15 +20,11 @@ const Navbar: React.FC = () => {
     return (
         <nav className="fixed top-0 left-0 w-full z-50 border-t-2  py-6 sm:py-8 xl:py-10">
             {/* Gradient border wrapper */}
-            <div className="max-w-full md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4">
+            <div className="max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto px-6 sm:px-4">
                 <div
-                    className="pl-[1px] pr-[0.5px] pb-[1px] pt-[.5px] rounded-full"
-                    style={{
-                        background:
-                            "linear-gradient(90.09deg, rgba(0, 220, 154, 0.36) -0.17%, rgba(74, 62, 193, 0.36) 80.53%)",
-                    }}
+                    className="pl-[1px] pr-[0.5px] pb-[1px] pt-[.5px] rounded-full bg-gradient-to-r from-black/20 to-black/20 shadow-[0_4px_32px_0_rgba(19,28,101,0.10)] backdrop-blur-[7px]"
                 >
-                    <div className="flex items-center rounded-full bg-white pl-6 pr-6 lg:pr-0 w-full relative">
+                    <div className="flex items-center rounded-full bg-transparent pl-6 pr-6 lg:pr-0 w-full relative">
                         {/* Logo */}
                         <div className="flex items-center gap-2 shrink-0">
                             <img
@@ -38,12 +34,12 @@ const Navbar: React.FC = () => {
                             />
                         </div>
                         {/* Desktop Nav Links */}
-                        <ul className="hidden lg:flex flex-1 items-center justify-center text-xs xl:text-sm text-[#000625] font-medium font-inter tracking-wide">
+                        <ul className="hidden lg:flex flex-1 items-center justify-center text-xs lg:text-[11px] xl:text-sm text-white font-medium font-inter tracking-wide">
                             {navLinks.map((link, idx) => (
                                 <li
                                     key={link.label}
-                                    className={`px-2 ${idx !== navLinks.length - 1 ? "border-r border-[#000B416E]" : ""
-                                        } ${activeLink === link.label ? "font-bold text-black" : ""} cursor-pointer transition-colors duration-200`}
+                                    className={`px-2 ${idx !== navLinks.length - 1 ? "border-r border-white/30" : ""
+                                        } ${activeLink === link.label ? "font-bold text-white" : ""} cursor-pointer transition-colors duration-200`}
                                     onClick={() => setActiveLink(link.label)}
                                 >
                                     <a href={link.href} className="block w-full h-full">
@@ -53,7 +49,7 @@ const Navbar: React.FC = () => {
                             ))}
                         </ul>
                         {/* Book Now Button */}
-                        <button className="hidden lg:block bg-[#00A876EB] text-white rounded-full px-6 py-3 font-normal ml-auto hover:bg-[#24a88e] transition-all duration-200 text-xs xl:text-sm shrink-0">
+                        <button className="hidden lg:block bg-[#00A876EB] text-white rounded-full px-6 py-3 font-normal ml-auto hover:bg-[#24a88e] transition-all duration-200 text-xs xl:text-sm shrink-0 ">
                             Book Now
                         </button>
                         {/* Hamburger */}
@@ -62,7 +58,7 @@ const Navbar: React.FC = () => {
                             onClick={() => setMenuOpen(!menuOpen)}
                             aria-label="Toggle menu"
                         >
-                            <TiThMenu className="w-6 rounded my-0.5 transition-all duration-300 text-[#000B41]" />
+                            <TiThMenu className="w-6 rounded my-0.5 transition-all duration-300 text-white" />
                         </button>
                     </div>
                 </div>

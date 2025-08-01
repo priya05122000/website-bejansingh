@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <section className="relative py-6  xl:py-10 px-4 ">
-            <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+        <section className="relative py-6  xl:py-10 px-6 sm:px-4 ">
+            <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto px-0 md:px-4 lg:px-8 xl:px-0 ">
                 <div className="relative bg-[#0A2259] rounded-4xl px-4 py-6 sm:px-8 sm:py-10 md:px-8 md:py-6 text-white overflow-hidden">
                     {/* Overlay background image */}
                     <div className="absolute inset-0 z-0">
@@ -18,15 +18,15 @@ const Hero = () => {
                         <img
                             src="/images/round.webp"
                             alt="Bejan Singh Logo"
-                            className="hidden lg:block h-32 sm:h-48 lg:h-full "
+                            className="hidden lg:block h-32 sm:h-48 lg:h-full"
                         />
                     </div>
                     {/* Content */}
-                    <div className="relative z-20 w-full max-w-full sm:max-w-lg md:max-w-2xl lg:max-w-xl xl:max-w-3xl">
+                    <div className="relative z-20 w-full max-w-full sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-3xl">
                         <span className="block text-xs sm:text-sm font-medium mb-2 opacity-80">About us</span>
-                        <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold tracking-tight font-jakarta mt-4 xl:mt-6">
+                        <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold tracking-tight font-jakarta mt-4 xl:mt-6">
                             Trusted Tertiary Eye Care in South Tamil Nadu
-                        </h2>
+                        </h1>
                         <p className="mt-4 text-xs sm:text-sm lg:text-sm xl:text-base font-inter opacity-90 leading-relaxed font-extralight text-justify">
                             <span className="font-bold">Bejan Singh Eye Hospital (P) Ltd</span>, established in 1992, is a tertiary eye care center and a recognized leader in comprehensive ophthalmology. With over 33 years of excellence, we have remained committed to delivering high-quality eye care services through innovation, expertise, and compassion. Each year, more than 3,50,000 patients choose our expert eye care team for specialized and reliable treatment.
                         </p>

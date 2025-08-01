@@ -4,7 +4,7 @@ const Founder = () => {
     return (
         <section className="relative py-6  xl:py-10 px-4 ">
             <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto">
-                <h1 className="text-3xl md:text-8xl font-bold font-jakarta   mb-10">Founder</h1>
+                <h2 className="text-3xl md:text-8xl font-bold font-jakarta   mb-10">Founder</h2>
                 {/* Founder 1 */}
                 <div className="">
                     <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start bg-[#0000220F] rounded-[50px] p-8  mb-10  w-full max-w-5xl ml-14 relative">
